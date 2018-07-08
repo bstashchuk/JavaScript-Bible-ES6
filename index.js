@@ -1,3 +1,11 @@
+// What is const?
+
+// WRONG
+// const - constant - value that doesn't change
+
+// CORRECT
+// const - variable that can't be reassigned
+
 // // Scope
 // let a = 10;
 // console.log(a);
