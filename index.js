@@ -5,11 +5,13 @@ var onlyOddNumbers = function(arr) {
   oddNumbers = [];
   EVEN_NUMBERS_QUANTITY = 0;
   len = arr.length;
+
   for (i = 0; i < len; i++) {
     arr[i] % 2
       ? oddNumbers.push(arr[i])
       : EVEN_NUMBERS_QUANTITY++;
   }
+
   var info;
   if (EVEN_NUMBERS_QUANTITY === 0) {
     info = "Array contains only odd numbers";
@@ -21,10 +23,12 @@ var onlyOddNumbers = function(arr) {
       " even numbers";
     console.log(info);
   }
+
   return {
     oddNumbers: oddNumbers,
     EVEN_NUMBERS_QUANTITY: EVEN_NUMBERS_QUANTITY
   };
+
   var oddNumbers;
 };
 
