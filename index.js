@@ -2,14 +2,16 @@
 function sum() {
   console.log(arguments);
   console.log(typeof arguments); // object
+  console.log(Array.isArray(arguments));
   const argumentsArray = Array.from(arguments);
   console.log(argumentsArray);
 }
 
 // arrow function expression
 const sum2 = () => {
-  console.log(arguments); //ReferenceError: arguments is not defined
-  console.log(typeof arguments);
+  console.log(arguments);
+  console.log(typeof arguments); // object
+  console.log(Array.isArray(arguments));
   const argumentsArray = Array.from(arguments);
   console.log(argumentsArray);
 };
