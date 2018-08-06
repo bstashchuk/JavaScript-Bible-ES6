@@ -7,6 +7,8 @@ const posts = [
 /* Create a function "findSinglePost" that will have two parameters - "postId" and "posts" and will return object with matched "postId".
 If post wasn't found - return "undefined"
 */
+const findSinglePost = (postId, posts) =>
+  posts.find(post => post.postId === postId);
 
 console.log(findSinglePost(6134, posts)); // { postId: 6134, commentsQuantity: 2 }
 
