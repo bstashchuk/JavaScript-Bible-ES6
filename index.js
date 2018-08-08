@@ -15,6 +15,34 @@ If numbers in the array are sorted in descending order - return "Array is sorted
 If array is not sorted - return "Array is not sorted"
 */
 
+const arrayCheck = inputArray => {
+  if (
+    inputArray.some(element => typeof element !== "number")
+  ) {
+    return "Some elements are not numbers";
+  }
+
+  if (
+    inputArray.every(
+      (element, index, array) =>
+        index > 0 ? element >= array[index - 1] : true
+    )
+  ) {
+    return "Array is sorted is ascending order";
+  }
+
+  if (
+    inputArray.every(
+      (element, index, array) =>
+        index > 0 ? element <= array[index - 1] : true
+    )
+  ) {
+    return "Array is sorted is descending order";
+  }
+
+  return "Array is not sorted";
+};
+
 console.log(arrayCheck(a)); // Some elements are not numbers
 console.log(arrayCheck(b)); // Array is sorted is ascending order
 console.log(arrayCheck(c)); // Array is sorted is descending order
