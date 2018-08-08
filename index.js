@@ -1,7 +1,7 @@
 const transport = ["Bus", "Car", "Bicycle", "Airplane"];
 
-/* Create a function "elementFound" with two parameters "array" and "element".
-If "element" is found in the "array" - return "true".
+/* Create a function "elementFound" with two parameters "inputArray" and "searchElement".
+If "searchElement" is found in the "inputArray" - return "true".
 Otherwise return "false"
 
 Hint: Use "some" helper method to solve this
