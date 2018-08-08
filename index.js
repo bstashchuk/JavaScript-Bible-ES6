@@ -4,7 +4,7 @@ const c = [150, 132, 80, 40];
 const d = [15, 26, 10, 23, 85];
 
 /*
-Create a function "arrayCheck" with one parameter - "array".
+Create a function "arrayCheck" with one parameter - "inputArray".
 
 If at least one element in the array is not a number - return "Some elements are not numbers".
 
