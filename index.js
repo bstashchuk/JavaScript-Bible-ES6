@@ -27,7 +27,7 @@ const products = [
 
 /* Create a function "quantityByCategories" with one parameter "products".
 
-This function "dataByCategories" should return an object with keys equal to categories and values equal to sum of all quantities in each category.
+This function "quantityByCategories" should return an object with keys equal to categories and values equal to sum of all quantities in each category.
 */
 
 console.log(quantityByCategories(products));
