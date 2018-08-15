@@ -25,6 +25,18 @@ If type of the "searchElement" is object or array, you need to convert each elem
 If type of the "searchElement" is not an object or array - simply apply "includes" method and return result
 */
 
+const elementIsIncluded = (searchElement, array) => {
+  if (typeof searchElement !== "object") {
+    return array.includes(searchElement);
+  }
+
+  if (typeof searchElement === "object") {
+    return array
+      .map(element => JSON.stringify(element))
+      .includes(JSON.stringify(searchElement));
+  }
+};
+
 console.log(elementIsIncluded(["css", "flexbox"], tags)); // true
 
 console.log(elementIsIncluded(["flexbox", "css"], tags)); // false
