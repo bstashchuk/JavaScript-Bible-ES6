@@ -9,6 +9,11 @@ Otherwise push "newElement" to the "inputArray".
 NOTE: We assume that "inputArray" may contain only primitive variables types
 */
 
+const pushIfUnique = (inputArray, newElement) =>
+  inputArray.includes(newElement)
+    ? console.log(newElement + " is already in the array")
+    : inputArray.push(newElement);
+
 pushIfUnique(myNumbers, 50); // "50 is already in the array"
 console.log(myNumbers); // [123, 50, 27]
 
