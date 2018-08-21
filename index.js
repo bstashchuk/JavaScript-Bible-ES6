@@ -20,7 +20,7 @@ const minimalComentsQty = 10;
 
 /* Create a function "popularPostsIds" with two parameters "posts" and "minimalComentsQty".
 
-This function "popularPostsIds" should return an array of postIds that have quantity of "comments" at least equal to "minimalComentsQty"
+This function "popularPostsIds" should return an array of postIds of posts that have quantity of "comments" at least equal to "minimalComentsQty"
 */
 
 console.log(popularPostsIds(posts, minimalComentsQty)); // [3421, 8135]
