@@ -31,12 +31,12 @@ This function "quantityByCategories" should return an object with keys equal to 
 */
 const quantityByCategories = products =>
   products.reduce((counts, product) => {
-    console.log(
-      "Counts is " +
-        JSON.stringify(counts) +
-        " and product is " +
-        JSON.stringify(product)
-    );
+    // console.log(
+    //   "Counts is " +
+    //     JSON.stringify(counts) +
+    //     " and product is " +
+    //     JSON.stringify(product)
+    // );
     counts[product.category] =
       (counts[product.category] || 0) + product.quantity;
     return counts;
