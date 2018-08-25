@@ -28,11 +28,13 @@ const products = [
 /* Create a function "sortProductsByPrice" with one parameter "products".
 
 This function "sortProductsByPrice" should sort input array of products by price of each product in ascending order and return resulting array.
-
 */
 
 sortProductsByPrice(products);
-/* Which sorting algorithm is used here in Google Chrome, Firefox, Node.js? */
+/* Which sorting algorithm is used here in Google Chrome, Firefox, Node.js? 
+
+Is this sorting stable or not?
+*/
 
 console.log(products);
 /* Array of products sorted by price in ascending order 
