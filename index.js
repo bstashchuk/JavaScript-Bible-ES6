@@ -32,7 +32,7 @@ This function "sortProductsByPrice" should sort input array of products by price
 */
 
 sortProductsByPrice(products);
-/* Which sorting algorithm is used here in Google Chrome, Firefox? */
+/* Which sorting algorithm is used here in Google Chrome, Firefox, Node.js? */
 
 console.log(products);
 /* Array of products sorted by price in ascending order 
