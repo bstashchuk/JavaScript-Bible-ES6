@@ -1,40 +1,77 @@
-const products = [
+const persons = [
   {
-    title: "Phone case",
-    price: 23,
-    quantity: 2,
-    category: "Accessories"
+    name: "Andy",
+    friendsQty: 10,
+    index: 1
   },
   {
-    title: "Android phone",
-    price: 150,
-    quantity: 1,
-    category: "Phones"
+    name: "Mike",
+    friendsQty: 5,
+    index: 2
   },
   {
-    title: "Headphones",
-    price: 78,
-    quantity: 1,
-    category: "Accessories"
+    name: "Sophia",
+    friendsQty: 10,
+    index: 3
   },
   {
-    title: "Sport Watch",
-    price: 55,
-    quantity: 2,
-    category: "Watches"
+    name: "Joshua",
+    friendsQty: 3,
+    index: 4
+  },
+  {
+    name: "John",
+    friendsQty: 10,
+    index: 5
+  },
+  {
+    name: "Gabriella",
+    friendsQty: 8,
+    index: 6
+  },
+  {
+    name: "Tyler",
+    friendsQty: 7,
+    index: 7
+  },
+  {
+    name: "Dylan",
+    friendsQty: 2,
+    index: 8
+  },
+  {
+    name: "Sarah",
+    friendsQty: 5,
+    index: 9
+  },
+  {
+    name: "Alexa",
+    friendsQty: 10,
+    index: 10
+  },
+  {
+    name: "Henry",
+    friendsQty: 10,
+    index: 11
+  },
+  {
+    name: "Arianna",
+    friendsQty: 10,
+    index: 12
   }
 ];
 
-/* Create a function "sortProductsByPrice" with one parameter "products".
+/* Create a function "sortPersonsByFriendsQty" with one parameter "persons".
 
-This function "sortProductsByPrice" should sort input array of products by price of each product in ascending order and return resulting array.
-
+This function "sortPersonsByFriendsQty" should sort input array of persons by friendsQty quantity of each person in ascending order and return resulting array.
 */
 
-sortProductsByPrice(products);
-/* Which sorting algorithm is used here in Google Chrome, Firefox, Node.js? */
+sortPersonsByFriendsQty(persons);
+/* Which sorting algorithm is used here in Google Chrome, Firefox, Node.js? 
 
-console.log(products);
-/* Array of products sorted by price in ascending order 
-Why original "products" array was mutated?
+Is this sorting stable or not?
+*/
+
+console.log(persons);
+/* Array of persons sorted by friendsQty in ascending order 
 */
