@@ -1,6 +1,9 @@
 /* 
 1. Sorting algorithm
+Insertion Sort - Google Chrome, Node.js, Firefox
+Merge Sort - Safari
 2. Qty of iterations
+13
 */
 const myNumbers = [10, 5, 79, 27, 50, 14, 27];
 
