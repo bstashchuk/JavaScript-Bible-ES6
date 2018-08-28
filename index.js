@@ -31,7 +31,7 @@ This function "sortProductsByPrice" should sort input array of products by price
 */
 
 sortProductsByPrice(products);
-/* Which sorting algorithm is used here in Google Chrome, Firefox, Node.js? 
+/* Which sorting algorithm is used here in Google Chrome, Firefox, Safari, Node.js? 
 
 Is this sorting stable or not?
 */
