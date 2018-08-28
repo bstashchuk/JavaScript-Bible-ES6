@@ -63,7 +63,7 @@ const persons = [
 
 /* Create a function "sortPersonsByFriendsQty" with one parameter "persons".
 
-This function "sortPersonsByFriendsQty" should sort input array of persons by friendsQty quantity of each person in ascending order and return resulting array.
+This function "sortPersonsByFriendsQty" should sort input array of persons by friendsQty of each person in ascending order and return resulting array.
 */
 
 sortPersonsByFriendsQty(persons);
