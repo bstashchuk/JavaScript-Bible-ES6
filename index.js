@@ -66,8 +66,23 @@ const persons = [
 This function "sortPersonsByFriendsQty" should sort input array of persons by friendsQty of each person in ascending order and return resulting array.
 */
 
+const sortPersonsByFriendsQty = persons => {
+  let it = 0;
+  persons.sort((a, b) => {
+    console.log(a.name, b.name);
+    it++;
+    return a.friendsQty - b.friendsQty;
+  });
+  console.log("Qty of iterations is " + it);
+  return persons;
+};
+
 sortPersonsByFriendsQty(persons);
 /* Which sorting algorithm is used here in Google Chrome, Firefox, Node.js? 
+
+QuickSort - Google Chrome (Qty > 10) - 21 iterations (NOT stable)
+Insertion Sort - Firefox - 31 iterations (stable)
+Merge Sort - Safari - 29 iterations (stable)
 
 Is this sorting stable or not?
 */
