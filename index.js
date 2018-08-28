@@ -37,6 +37,6 @@ Is this sorting stable or not?
 */
 
 console.log(products);
-/* Array of products sorted by price in ascending order 
+/* Array of products sorted by price in ascending order.
 Why original "products" array was mutated?
 */
