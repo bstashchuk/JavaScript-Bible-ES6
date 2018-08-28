@@ -1,6 +1,6 @@
 /* 
 1. Sorting algorithm
-Insertion Sort - Google Chrome, Firefox, Node.js
+Insertion Sort - Google Chrome (Qty <= 10), Firefox, Node.js (Qty <= 10)
 Merge Sort - Safari
 2. Qty of iterations
 13
