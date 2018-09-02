@@ -1,6 +1,6 @@
 /* Create a function "templateLiteral" with one parameter "num".
 
-Function is expected to return template literal. Sample function calls are below 
+Function is expected to return template literal. Sample function calls are below.
 */
 
 // TEST 1
