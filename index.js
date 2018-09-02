@@ -6,7 +6,7 @@ Use all knowledge gained in the previous sections.
 
 IMPORTANT: Input template literal may have *ANY* quantity of the expressions. 
 
-If you are stuck - hints down below!
+NOTE: If you are stuck - hints down below!
 */
 
 // FIRST test case
