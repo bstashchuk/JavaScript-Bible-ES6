@@ -9,6 +9,29 @@ IMPORTANT: Input template literal may have *ANY* quantity of the expressions.
 NOTE: If you are stuck - hints down below!
 */
 
+/*
+1. Get all arguments and extract all results of the expressions to the separate array. "vals"
+const vals = Array.from(arguments).slice(1)
+
+2. "arrayOfStrings" - first parameter
+3. "arrayOfStrings".length - 1 = "vals".length
+4. Concatenate elements in "arrayOfStrings" and "vals"
+.reduce(, "")
+*/
+
+function taggedTemplate(arrayOfStrings) {
+  const vals = Array.from(arguments).slice(1);
+  // console.log(arrayOfStrings);
+  // console.log(vals);
+  return arrayOfStrings.reduce(
+    (concatStr, str, index) =>
+      concatStr +
+      str +
+      (vals[index] !== undefined ? vals[index] : ""),
+    ""
+  );
+}
+
 // FIRST test case
 const a = 10;
 const b = 5;
