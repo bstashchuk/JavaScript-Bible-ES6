@@ -18,7 +18,7 @@ console.log(weatherForecast("Paris"));
 // Weather forecast for Paris: Great weather!
 
 console.log(weatherForecast("Miami", ""));
-// Weather forecast for Miami: Great weather!
+// Weather forecast for Miami:
 
 console.log(weatherForecast("Las Vegas", undefined));
 // Weather forecast for Las Vegas: Great weather!
