@@ -24,16 +24,20 @@ const tasks = [
 ];
 
 console.log(
-  "Sorted array of tasks with taskIds",
+  "Sorted array of tasks with taskIds:",
   tasksSortedByIds(tasks)
 );
+/* 
+Quantity of the missing taskIds is 2
+Sorted array of tasks with taskIds: ...
+*/
 
 console.log(
   "Original unsorted array of tasks with missing taskIds:",
   tasks
 );
-/* 
-Original array "tasks" should not be mutated
+/*
+Original unsorted array of tasks with missing taskIds: ...
 */
 
 /* HINTS
