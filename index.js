@@ -3,17 +3,63 @@ Create a function "tasksSortedByIds" with two parameters "tasks" and "tasksWithI
 
 1. Before performing any actions inside of the function you need to generate unique 4-digit "taskId" for each task where it is missing.
 
+"generateTasksIds" > tasksWithIds = generateTasksIds(tasks) > .map > copy task {...task} > generate taskId if needed > tasksWithIds - array of tasks with taskIds
+
 2. At the beginning of the function log to the console quantity of the missing taskIds:
 "Quantity of the missing taskIds is 2"
 
+.filter > hasOwnProperty("taskId") > .length
+
 3. Function should return array of tasks sorted by "taskId". All tasks in the sorted array must have "taskId".
+
+sort tasksWithIds .sort((a, b) => a.taskId - b.taskId)
 
 NOTE: Original "tasks" array should remain unchanged.
 
 NOTE: Hints down below!
 
 BONUS: Ensure that new unique 4-digit "taskId" is not the same as any "taskId" of the existing tasks.
+
+do-while loop
 */
+
+/*
+Generate unique 4-digit number:
+1000 <= number < 10000
+1000 + Math.floor(Math.random() * 9000)
+*/
+
+const generateTasksIds = tasks => {
+  let newTaskIds = [];
+  return tasks.map(({ ...task }) => {
+    if (!task.hasOwnProperty("taskId")) {
+      let newTaskId;
+      do {
+        newTaskId = 1000 + Math.floor(Math.random() * 9000);
+      } while (
+        tasks.find(task => task.taskId === newTaskId) ||
+        newTaskIds.includes(newTaskId)
+      );
+      newTaskIds.push(newTaskId);
+
+      task.taskId = newTaskId;
+    }
+    return task;
+  });
+};
+
+const tasksSortedByIds = (
+  tasks,
+  tasksWithIds = generateTasksIds(tasks)
+) => {
+  console.log(
+    `Quantity of the missing taskIds is ${
+      tasks.filter(task => !task.hasOwnProperty("taskId"))
+        .length
+    }`
+  );
+  return tasksWithIds.sort((a, b) => a.taskId - b.taskId);
+};
 
 const tasks = [
   { title: "Meeting with John", taskId: 4621 },
