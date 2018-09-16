@@ -44,5 +44,7 @@ photo1.info();
 setTimeout(() => photo1.publishInfo(), 2000);
 /* Foto "My dog" was published 2 seconds ago */
 
+/* QUESTION: Why "publishInfo" method still has access to the parameters (for example "date") of the "photoGallery" function? */
+
 console.log(photo1[testDimension1]); // true
 console.log(photo1[testDimension2]); // undefined
