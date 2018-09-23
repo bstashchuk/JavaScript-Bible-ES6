@@ -2,7 +2,11 @@
 Modify parameters section in the "processQuantities" function to match console.log outputs
 */
 
-const processQuantities = (/* parameters */) => {
+const processQuantities = ([
+  minQty,
+  maxQty,
+  defaultQty = 0
+]) => {
   console.log(minQty); // 8
   console.log(maxQty); // 29
   console.log(defaultQty); // 0
