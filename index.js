@@ -23,6 +23,19 @@ const posts = [
   }
 ];
 
+const processPosts = posts =>
+  posts.map(
+    ({
+      postId,
+      author: postAuthor,
+      commentsQty: postCommentsQty = 0
+    }) => ({
+      postAuthor,
+      postCommentsQty,
+      postId: postId + 1000
+    })
+  );
+
 console.log(processPosts(posts));
 /*
 [
