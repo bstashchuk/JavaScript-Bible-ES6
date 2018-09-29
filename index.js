@@ -14,6 +14,14 @@ let person = {
   cartId: 435
 };
 
+{
+  let _id, processed, cart;
+
+  ({ _id, processed, cart, ...person } = person);
+}
+
+// let { _id, processed, cart, ...person } = person; // Uncaught SyntaxError: Identifier 'person' has already been declared
+
 console.log(person);
 /*
 {
