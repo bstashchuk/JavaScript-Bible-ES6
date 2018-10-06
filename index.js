@@ -133,3 +133,75 @@
 // smallPlane.modifySeatsNumber(10); // modifies property of the "smallPlane"
 
 // smallPlane.seatsInfo(); // 10
+
+// /**
+//  * EXAMPLE 5
+//  *
+//  * Prototype Chain
+//  * CivilPlane.prototype > Airplane.prototype
+//  * > Object.protoype
+//  */
+// function Airplane(props) {
+//   this.wingspan = props.wingspan;
+//   this.maxRangeOfFlight = props.maxRangeOfFlight;
+// }
+
+// Airplane.prototype.airplaneInfo = function() {
+//   console.log(
+//     `Wingspan of the airplane is ${
+//       this.wingspan
+//     } and maximal range of flight is ${
+//       this.maxRangeOfFlight
+//     }`
+//   );
+// };
+
+// function CivilPlane(props) {
+//   Airplane.call(this, props);
+//   this.numberOfSeats = props.numberOfSeats;
+// }
+
+// CivilPlane.prototype = Object.create(Airplane.prototype);
+
+// // console.log(
+// //   CivilPlane.prototype.__proto__ === Airplane.prototype
+// // ); // true
+
+// // console.log(
+// //   CivilPlane.prototype.constructor === CivilPlane
+// // ); // false
+
+// CivilPlane.prototype.constructor = CivilPlane;
+
+// // console.log(
+// //   CivilPlane.prototype.constructor === CivilPlane
+// // ); // true
+
+// CivilPlane.prototype.seatsInfo = function() {
+//   console.log(this); // instance of the prototype
+//   console.log(
+//     `Number of seats in the plane is ${this.numberOfSeats}`
+//   );
+// };
+
+// CivilPlane.prototype.modifySeatsNumber = function(
+//   newSeatsQty
+// ) {
+//   this.numberOfSeats = newSeatsQty;
+// };
+
+// const propsForSmallPlane = {
+//   numberOfSeats: 4,
+//   wingspan: 20,
+//   maxRangeOfFlight: 1000
+// };
+
+// const smallPlane = new CivilPlane(propsForSmallPlane);
+
+// const propsForLargePlane = {
+//   numberOfSeats: 250,
+//   wingspan: 60,
+//   maxRangeOfFlight: 3500
+// };
+
+// const largePlane = new CivilPlane(propsForLargePlane);
