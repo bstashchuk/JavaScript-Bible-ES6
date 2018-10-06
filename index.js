@@ -14,7 +14,7 @@
  * Vehicle.prototype shoud set two additional
  * properties:
  * 1. maxSpeed
- * 2. Weight
+ * 2. weight
  *
  * It should also contain method "vehicleInfo"
  * available for any object down the prototype chain
