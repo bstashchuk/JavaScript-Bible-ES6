@@ -11,7 +11,7 @@
  * CivilPlane.prototype > Airplane.prototype
  * > Vehicle.prototype > Object.protoype
  *
- * Vehicle.prototype shoud set two additional
+ * Vehicle.prototype should set two additional
  * properties:
  * 1. maxSpeed
  * 2. weight
