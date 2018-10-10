@@ -1,5 +1,5 @@
 /**
- * CHALLENGE 7-2
+ * CHALLENGE 7-2: SOLUTION
  *
  * Fix all mistakes in the code below
  */
