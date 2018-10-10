@@ -18,6 +18,6 @@
  * and test new method "customPush" and compare it with "push"
  *
  * What will happen if name of the custom method
- * in the "ExtendedArray" class will be also "push"?
- * Try this.
+ * in the "ExtendedArray" class will be also "push"
+ * instead of "customPush"? Try this.
  */
