@@ -1,14 +1,23 @@
 /**
- * CHALLENGE 7-4: TASK
+ * CHALLENGE 7-5: TASK
  *
  * Create new class "ExtendedArray" that should extend
  * built-in "Array".
  *
- * Add two custom methods to the new class:
- * 1. "sum" - it should return sum of all elements in the array
- * 2. "onlyNumbers" - it should return new array that will
- * contain only numbers from the source array
+ * Add one custom method "customPush" to the new class.
+ * This method will have one parameter "newElement".
  *
- * Create several instances of the new "ExtendedArray" class
- * and test both methods "sum" and "onlyNumbers"
+ * It should perform following actions:
+ * 1. Add new element to the existing array
+ * (don't use "push" method for this)
+ * 2. Modify "length" property of the array (increment it)
+ * 3. Log following line to the console:
+ * "New element <ELEMENT> was just added to the array"
+ *
+ * Create instance of the new "ExtendedArray" class
+ * and test new method "customPush" and compare it with "push"
+ *
+ * What will happen if name of the custom method
+ * in the "ExtendedArray" class will be also "push"?
+ * Try this.
  */
