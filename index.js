@@ -6,31 +6,36 @@
 
 function Product(props) {
   this.price = props.price;
-  this.priceInfo = () => {
-    console.log(`Price of the product is ${price}`);
-  };
 }
 
-function ElectricDevice() {
+Product.prototype.priceInfo = function() {
+  console.log(`Price of the product is ${this.price}`);
+};
+
+function ElectricDevice(props) {
+  Product.call(this, props);
   this.energyEfficiencyClass = props.energyEfficiencyClass;
-  energyInfo = function() {
-    console.log(
-      `Energy Efficiency Class is ${
-        this.energyEfficiencyClass
-      }`
-    );
-  };
 }
 
-ElectricDevice.prototype = Object.create(Product);
+ElectricDevice.prototype = Object.create(Product.prototype);
+
+ElectricDevice.prototype.constructor = ElectricDevice;
+
+ElectricDevice.prototype.energyInfo = function() {
+  console.log(
+    `Energy Efficiency Class is ${
+      this.energyEfficiencyClass
+    }`
+  );
+};
 
 function TV(props) {
-  ElectricDevice.call(props, this);
-  this.model = model;
+  ElectricDevice.call(this, props);
+  this.model = props.model;
   this.diagonal = props.diagonal;
 }
 
-TV.prototype = Object.create(ElectricDevice);
+TV.prototype = Object.create(ElectricDevice.prototype);
 
 TV.prototype.constructor = TV;
 
@@ -41,7 +46,7 @@ const propsForMyTv = {
   diagonal: 42
 };
 
-const myTV = TV(propsForMyTv);
+const myTV = new TV(propsForMyTv);
 
 /**
  * VERIFICATION
