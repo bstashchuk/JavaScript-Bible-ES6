@@ -1,5 +1,5 @@
 /**
- * CHALLENGE 7-3: TASK
+ * CHALLENGE 7-3: SOLUTION
  *
  * Convert all function constructors to ES6 Classes keeping same functionality
  */
