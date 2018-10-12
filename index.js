@@ -4,40 +4,39 @@
  * Convert all function constructors to ES6 Classes keeping same functionality
  */
 
-function Product(props) {
-  this.price = props.price;
+class Product {
+  constructor({ price }) {
+    this.price = price;
+  }
+
+  priceInfo() {
+    console.log(`Price of the product is ${this.price}`);
+  }
 }
 
-Product.prototype.priceInfo = function() {
-  console.log(`Price of the product is ${this.price}`);
-};
+class ElectricDevice extends Product {
+  constructor(props) {
+    super(props);
+    this.energyEfficiencyClass =
+      props.energyEfficiencyClass;
+  }
 
-function ElectricDevice(props) {
-  Product.call(this, props);
-  this.energyEfficiencyClass = props.energyEfficiencyClass;
+  energyInfo() {
+    console.log(
+      `Energy Efficiency Class is ${
+        this.energyEfficiencyClass
+      }`
+    );
+  }
 }
 
-ElectricDevice.prototype = Object.create(Product.prototype);
-
-ElectricDevice.prototype.constructor = ElectricDevice;
-
-ElectricDevice.prototype.energyInfo = function() {
-  console.log(
-    `Energy Efficiency Class is ${
-      this.energyEfficiencyClass
-    }`
-  );
-};
-
-function TV(props) {
-  ElectricDevice.call(this, props);
-  this.model = props.model;
-  this.diagonal = props.diagonal;
+class TV extends ElectricDevice {
+  constructor(props) {
+    super(props);
+    this.model = props.model;
+    this.diagonal = props.diagonal;
+  }
 }
-
-TV.prototype = Object.create(ElectricDevice.prototype);
-
-TV.prototype.constructor = TV;
 
 const propsForMyTv = {
   model: "A1620",
