@@ -1,8 +1,7 @@
 /**
  * CHALLENGE 7-3: TASK
  *
- * Convert all function constructors to ES6 Classes
- * keeping same functionality
+ * Convert all function constructors to ES6 Classes keeping same functionality
  */
 
 function Product(props) {
