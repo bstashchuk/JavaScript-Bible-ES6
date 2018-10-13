@@ -1,3 +1,10 @@
+/**
+ * CHALLENGE 1-1 SOLUTION
+ *
+ * Rewrite code below using let, const and var according to
+ * variables usage guidelines
+ */
+
 "use strict";
 
 const numbers1 = [23, 87, 110, 11, 20, 5, 34];
