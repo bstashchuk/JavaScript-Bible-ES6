@@ -25,5 +25,4 @@ var a = 1;
 
 var c;
 
-// 1, 5, undefined
-console.log(a, b, c);
+console.log(a, b, c); // 1, 5, undefined
