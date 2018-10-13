@@ -1,3 +1,9 @@
+/**
+ * CHALLENGE 1-1 TASK
+ *
+ * Rewrite code below using let, const and var according to
+ * variables usage guidelines
+ */
 numbers1 = [23, 87, 110, 11, 20, 5, 34];
 numbers2 = [11, 21, 31];
 
