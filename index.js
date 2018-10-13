@@ -50,6 +50,7 @@ const myTV = new TV(propsForMyTv);
 /**
  * VERIFICATION
  */
+
 console.log(myTV);
 /* {
   model: "A1620",
