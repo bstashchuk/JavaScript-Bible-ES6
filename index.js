@@ -18,3 +18,27 @@
  * What will happen if name of the custom method in the "CustomArray" class will be also "push" instead of "customPush"?
  * Try this.
  */
+
+class CustomArray extends Array {
+  customPush(newElement) {
+    console.log(`Initial length is ${this.length}`);
+    this[this.length] = newElement;
+    console.log(
+      `Updated length of the array is ${this.length}`
+    ); // length property is updated automatically
+
+    console.log(
+      `New element ${newElement} was just added to the array`
+    );
+  }
+}
+
+const firstInstance = new CustomArray();
+
+firstInstance.customPush(1);
+
+console.log(firstInstance); // [1]
+
+firstInstance.customPush(10);
+
+console.log(firstInstance); // [1, 10]
