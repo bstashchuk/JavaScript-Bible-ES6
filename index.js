@@ -6,8 +6,10 @@ class LikeButton extends React.Component {
 
   render() {
     return React.createElement(
-      "button",
+      window["material-ui"].Button,
       {
+        variant: "contained",
+        color: this.props.color,
         onClick: () =>
           this.setState({
             clickedQty: ++this.state.clickedQty
@@ -22,7 +24,9 @@ class LikeButton extends React.Component {
   }
 }
 
-const button1 = React.createElement(LikeButton);
+const button1 = React.createElement(LikeButton, {
+  color: "primary"
+});
 
 const buttonContainer1 = document.getElementById("button1");
 
