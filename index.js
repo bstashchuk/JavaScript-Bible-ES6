@@ -1,4 +1,4 @@
-class LikeButton extends React.Component {
+class MyButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = { clickedQty: 0 };
@@ -24,7 +24,7 @@ class LikeButton extends React.Component {
   }
 }
 
-const button1 = React.createElement(LikeButton, {
+const button1 = React.createElement(MyButton, {
   color: "primary"
 });
 
