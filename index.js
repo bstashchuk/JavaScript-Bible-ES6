@@ -1,5 +1,5 @@
 /**
- * CHALLENGE 7-6 - TASK
+ * CHALLENGE 7-6 - SOLUTION
  *
  * Add one more button with color "secondary".
  * Also change styles of the existing and new buttons
