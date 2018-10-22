@@ -18,7 +18,7 @@ class MyButton extends React.Component {
     return React.createElement(
       window["material-ui"].Button,
       {
-        variant: "contained",
+        variant: this.props.variant,
         color: this.props.color,
         onClick: () =>
           this.setState({
@@ -34,10 +34,22 @@ class MyButton extends React.Component {
   }
 }
 
+// button1
 const button1 = React.createElement(MyButton, {
-  color: "primary"
+  color: "primary",
+  variant: "outlined"
 });
 
 const buttonContainer1 = document.getElementById("button1");
 
 ReactDOM.render(button1, buttonContainer1);
+
+// button2
+const button2 = React.createElement(MyButton, {
+  color: "secondary",
+  variant: "extendedFab"
+});
+
+const buttonContainer2 = document.getElementById("button2");
+
+ReactDOM.render(button2, buttonContainer2);
