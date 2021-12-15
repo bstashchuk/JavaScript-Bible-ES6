@@ -10,7 +10,7 @@ const personInfo = (/* parameters */) => {
 
 const person = {
   name: "Alice",
-  age: 19,
+  age: 20,
   location: {
     country: "England",
     city: "London"
