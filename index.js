@@ -1,30 +1,21 @@
-/*
-Modify "personInfo" function to match console.log output at the end of the challenge.
+/*typeof return's type is "string". The value is :
+    1- the underlying primitive type for primitive type operands (string, number, undefined, boolean, etc...)
+    2- "object" for all reference types 
+    3- "object" for null
+    4- "function" for functions
+    */
 
-Object that is returned by "personInfo" function must contain only shorthand property names.
-*/
+    // console.log(typeof(undefined)) //undefined
+    // console.log(typeof(null)) //object
+    // console.log(typeof({})) //object 
+    //  console.log(typeof([])) //object not array
+    //  console.log(typeof( ()=>{})) //function not object
+    //  console.log(typeof( function(){})) //function not object
+    //  console.log(typeof( function(){})) //function not object
 
-const personInfo = (/* parameters */) => {
-  /* return ... */
-};
+/* Intanceof :
+    1- always return false for primitive types as they don't have function constructor in the proto list 
+    2- true if the function constructor on the right is in the proto list of the argument
 
-const person = {
-  name: "Alice",
-  age: 19,
-  location: {
-    country: "England",
-    city: "London"
-  }
-};
-
-console.log(personInfo(person));
-/*
-{
-  name: "Alice",
-  personAge: 19,
-  origin: "England",
-  homeCity: "London",
-  friendsQty: 0,
-  recordCreatedAt: *current year*
-}
-*/
+    
+    */
