@@ -1,30 +1,18 @@
-/*
-Modify "personInfo" function to match console.log output at the end of the challenge.
+//Arrow function cannot be used as function constructor, Exception: ... Is not a constructor
 
-Object that is returned by "personInfo" function must contain only shorthand property names.
-*/
+function Pyramidian(isu, firstname, lastname){
+    this.isu=isu,
+    this.firstname=firstname,
+    this.lastname=lastname
+} // This works fine
 
-const personInfo = (/* parameters */) => {
-  /* return ... */
-};
+var pyramidian= new Pyramidian(1, "Souleymane", "Condé");
 
-const person = {
-  name: "Alice",
-  age: 19,
-  location: {
-    country: "England",
-    city: "London"
-  }
-};
-
-console.log(personInfo(person));
-/*
-{
-  name: "Alice",
-  personAge: 19,
-  origin: "England",
-  homeCity: "London",
-  friendsQty: 0,
-  recordCreatedAt: *current year*
+var Pyramidien= (isu, firstname, lastname)=>{
+    this.isu=isu,
+    this.firstname=firstname,
+    this.lastname=lastname
 }
-*/
+
+// console.log(pyramidian)
+console.log(new Pyramidien(1, "Souleymane", "Condé"))
